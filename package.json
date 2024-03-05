@@ -1,0 +1,25 @@
+{
+  "name": "@moncici/coingecko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "coin_scan_coingecko.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moncici007/coingecko"
+  },
+  "website": "https://github.com/moncici007/coingecko.git",
+  "keywords": [
+    "coingecko",
+    "client"
+  ],
+  "author": "moncici007",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "homepage": "https://github.com/moncici007/coingecko#readme"
+}
