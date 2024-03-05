@@ -2,6 +2,7 @@ import axios from 'axios';
 import { axiosConfig } from '@moncici/proxy';
 import { sleep } from '@moncici/sleep';
 import { notify } from 'feishu-notifier';
+import { log } from '@moncici/log';
 
 export async function getPriceByCoin(coin) {
   const url = 'https://api.coingecko.com/api/v3/coins/'+coin;
@@ -13,7 +14,7 @@ export async function getPriceByCoin(coin) {
     return data.market_data.current_price.usd;
   } catch(error) {
     notify('BUY', error.response.data);
-    error(`无法获取 ${coin} USD 价格:`, error.response.data);
+    log(`无法获取 ${coin} USD 价格:`, error.response.data);
     throw error; // 将错误向上抛出
   }
 }
