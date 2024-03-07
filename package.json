@@ -1,6 +1,6 @@
 {
   "name": "@moncici/coingecko",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "type": "module",
   "main": "coin_scan_coingecko.js",
