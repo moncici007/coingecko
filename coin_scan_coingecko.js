@@ -1,8 +1,8 @@
 import axios from 'axios';
-import { axiosConfig } from '@moncici/proxy';
+import { axiosConfig }  from '@moncici/proxy';
 import { sleep } from '@moncici/sleep';
 import { notify } from 'feishu-notifier';
-import { log } from '@moncici/log';
+import { log }  from '@moncici/log';
 
 export async function getPriceByCoin(coin) {
   const url = 'https://api.coingecko.com/api/v3/coins/'+coin;
@@ -41,3 +41,5 @@ export async function getCoins() {
     throw error; // 将错误向上抛出
   }
 }
+
+// log(await getCoins())
